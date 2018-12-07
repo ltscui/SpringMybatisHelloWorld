@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.ltcui.student.mapper.StudentMapper">
+	<select id="getStudentById" parameterType="string" resultType="com.ltcui.student.entity.Student">
+		select stuId, stuName, stuSex, stuAge 
+		  from student 
+		where stuId = #{stuId} 
+	</select>
+</mapper>
