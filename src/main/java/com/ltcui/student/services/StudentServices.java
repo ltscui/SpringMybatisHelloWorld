@@ -1,6 +1,7 @@
 package com.ltcui.student.services;
 
-import org.springframework.beans.factory.annotation.Autowired;
+import javax.annotation.Resource;
+
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
@@ -11,7 +12,7 @@ import com.ltcui.student.mapper.StudentMapper;
 @Service
 public class StudentServices {
 	
-	@Autowired
+	@Resource
 	private StudentMapper studentMapper;
 	
 	/**
